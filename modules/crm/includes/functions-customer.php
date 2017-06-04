@@ -1720,6 +1720,19 @@ function erp_crm_get_customer_serach_key() {
                 '$'  => __( 'ends with', 'erp' ),
             ]
         ],
+
+        'company' => [
+            'title' => __( 'Company', 'erp' ),
+            'type'  => 'dropdown_mulitple_select2',
+            'placeholder' => __( 'Search a company', 'erp' ),
+            'action'      => 'erp-crm-search-company',
+            'editaction'  => 'erp-crm-search-company-edit-selected',
+            'text' => '',
+            'condition' => [
+                '' => __( 'in company/companies', 'erp' ),
+                '!' => __( 'not in company/companies', 'erp' ),
+            ],
+        ],
     ] );
 }
 
@@ -1940,7 +1953,7 @@ function erp_crm_get_search_by_already_saved( $save_search_id ) {
 function erp_crm_contact_advance_filter( $custom_sql, $args ) {
     global $wpdb;
 
-    $pep_fileds  = [ 'first_name', 'last_name', 'email', 'website', 'company', 'phone', 'mobile', 'other', 'fax', 'notes', 'street_1', 'street_2', 'city', 'postal_code', 'currency' ];
+    $pep_fileds  = [ 'first_name', 'last_name', 'email', 'website', 'phone', 'mobile', 'other', 'fax', 'notes', 'street_1', 'street_2', 'city', 'postal_code', 'currency' ];
     $people_meta_fields = erp_crm_get_contact_meta_fields();
 
     if ( !isset( $args['erpadvancefilter'] ) || empty( $args['erpadvancefilter'] ) ) {
@@ -2083,9 +2096,16 @@ function erp_crm_contact_advance_filter( $custom_sql, $args ) {
                             }
                             $custom_sql['where'][] = ( $i == count( $or_query )-1 ) ? ")" : " ) AND";
                         }
+
+                    } else if ( $field === 'company' ) {
+                        $custom_sql['join'][] = "LEFT JOIN {$wpdb->prefix}erp_crm_customer_companies as cust_company ON people.id = cust_company.customer_id";
+
+                        $custom_sql['where'][] = 'cust_company.company_id IN(' . implode( ', ', $value ) . ')';
+
                     } else {
                         $custom_sql = apply_filters( 'erp_crm_customer_segmentation_sql', $custom_sql, $field, $value, $or_query, $i, $table_alias );
                     }
+
 
                     $i++;
                 }
@@ -2097,6 +2117,7 @@ function erp_crm_contact_advance_filter( $custom_sql, $args ) {
         }
 
     }
+
 
     return $custom_sql;
 }

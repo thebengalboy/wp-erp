@@ -37,6 +37,8 @@ class Ajax_Handler {
         $this->action( 'wp_ajax_erp-crm-get-assignable-group', 'get_assignable_contact' );
         $this->action( 'wp_ajax_erp-search-crm-contacts', 'search_crm_contacts' );
 
+        $this->action( 'wp_ajax_erp-crm-search-company', 'search_company' );
+        $this->action( 'wp_ajax_erp-crm-search-company-edit-selected', 'search_company_edit' );
         $this->action( 'wp_ajax_erp-crm-customer-add-company', 'customer_add_company' );
         $this->action( 'wp_ajax_erp-crm-customer-update-company', 'customer_update_company' );
         $this->action( 'wp_ajax_erp-crm-customer-remove-company', 'customer_remove_company' );
@@ -491,6 +493,45 @@ class Ajax_Handler {
         $statuses = erp_crm_customer_get_status_count( $type );
 
         $this->send_success( [ 'id' => $people_id, 'statuses' => $statuses ] );
+    }
+
+    public function search_company() {
+        $this->verify_nonce( 'wp-erp-crm-nonce' );
+
+        $companies = [];
+
+        if ( ! empty( $_GET['q'] ) ) {
+            $people = erp_get_peoples([
+                'type' => 'company',
+                'orderby' => 'company',
+                'order' => 'ASC',
+                's' => $_GET['q']
+            ]);
+
+            if ( ! empty( $people ) ) {
+                $companies = wp_list_pluck( $people, 'company', 'id' );
+            }
+        }
+
+        $this->send_success( $companies );
+    }
+
+    public function search_company_edit() {
+        $this->verify_nonce( 'wp-erp-crm-nonce' );
+
+        $options = [];
+        $selected = isset( $_POST['selected'] ) ? $_POST['selected'] : [];
+
+        if ( empty( $selected ) ) {
+            $this->send_error();
+        }
+
+        $companies = \WeDevs\ERP\Framework\Models\People::whereNotNull( 'company' )
+                        ->select( 'id', 'company as text' )
+                        ->whereIn( 'id', $_POST['selected'] )
+                        ->get();
+
+        $this->send_success( $companies );
     }
 
     /**
