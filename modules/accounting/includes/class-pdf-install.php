@@ -1,91 +1,40 @@
 <?php
 namespace WeDevs\ERP\Accounting;
 
+require_once(ABSPATH . 'wp-admin/includes/class-wp-upgrader.php');
+require_once(ABSPATH . 'wp-admin/includes/plugin-install.php');
+
 class PDF_Install {
 
-    public $plugin_name        = 'WP ERP - PDF Invoice';
-    public $plugin_uri         = 'http://wperp.com';
-    public $plugin_version     = '1.0.0';
-    public $plugin_description = 'PDF invoice for WP ERP';
-    public $author             = 'weDevs';
-    public $author_uri         = 'http://wedevs.com';
-    public $text_domain        = 'erp_pdf';
-    public $domain_path        = '/languages';
-    public $network            = '';
-    public $title              = 'WP ERP - PDF Invoice';
-    public $author_name        = 'weDevs';
-
-    public function ac_get_plugins( $plugins ) {
-        $args = array(
-            'path'         => ABSPATH . 'wp-content/plugins/',
-            'preserve_zip' => false
-        );
-
-        foreach ( $plugins as $plugin ) {
-            $this->ac_plugin_download( $plugin['path'], $args['path'] . $plugin['name'] . '.zip' );
-            $this->ac_plugin_unpack( $args, $args['path'] . $plugin['name'] . '.zip');
-            $this->ac_plugin_activate( $plugin['install'] );
-        }
-    }
-
-    public function ac_plugin_download( $url, $path ) {
-        $data = wp_remote_get( $url, array( 'timeout' => 60 ) );
-        file_put_contents( $path, $data['body'] );
-    }
-
-    public function ac_plugin_unpack( $args, $target ) {
-        if ( $zip = zip_open( $target ) ) {
-            while ( $entry = zip_read($zip) ) {
-                $is_file   = substr( zip_entry_name( $entry ), -1 ) == '/' ? false : true;
-                $file_path = $args['path'] . zip_entry_name( $entry );
-
-                if ( $is_file ) {
-                    if ( zip_entry_open( $zip, $entry, 'r' ) ) {
-                        $fstream = zip_entry_read( $entry, zip_entry_filesize( $entry ) );
-                        file_put_contents( $file_path, $fstream );
-                        chmod( $file_path, 0777 );
-                    }
-                    zip_entry_close( $entry );
-
-                } else {
-                    if ( zip_entry_name( $entry ) ) {
-                        mkdir( $file_path );
-                        chmod( $file_path, 0777 );
-                    }
-                }
-            }
-
-            zip_close($zip);
-        }
-
-        if ($args['preserve_zip'] === false) {
-            unlink($target);
-        }
-    }
-
-    public function ac_plugin_activate( $installer ) {        
-        $cache_plugins = wp_cache_get( 'plugins', 'plugins' );
-
-        if ( ! empty( $cache_plugins ) ) {
-            $new_plugin = array(
-                'Name'        => $this->plugin_name,
-                'PluginURI'   => $this->plugin_uri,
-                'Version'     => $this->plugin_version,
-                'Description' => $this->plugin_description,
-                'Author'      => $this->author_name,
-                'AuthorURI'   => $this->author_uri,
-                'TextDomain'  => $this->text_domain,
-                'DomainPath'  => $this->domain_path,
-                'Network'     => $this->network,
-                'Title'       => $this->plugin_name,
-                'AuthorName'  => $this->author_name,
+    public function install_plugin( $url ) {
+        if ( strstr( $url, '.zip' ) != false ) {
+            $download_link = $url;
+        } else {
+            $slug = explode( '/', $url );
+            $slug = $slug[ count($slug) - 2 ];
+            $api = plugins_api( 'plugin_information', array(
+                    'slug' => $slug,
+                    'fields' => array( 'sections' => 'false' )
+                )
             );
-            
-            $cache_plugins[''][$installer] = $new_plugin;
-            wp_cache_set('plugins', $cache_plugins, 'plugins');
+            $download_link = $api->download_link;
         }
 
-        activate_plugin( $installer );
+        $upgrader = new \Plugin_Upgrader();
+
+        if ( ! $upgrader->install( $download_link ) )
+            return 0;
+
+        $plugin_to_activate = $upgrader->plugin_info();
+        $this->activate_pdf_plugin( $plugin_to_activate );
+
+        return 1;
+    }
+
+    public function activate_pdf_plugin( $plugin_to_activate ) {
+        $activate = activate_plugin( $plugin_to_activate );
+        wp_cache_flush();
+
         $this->show_activation_notice();
     }
 

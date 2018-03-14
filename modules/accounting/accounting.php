@@ -250,15 +250,9 @@ class Accounting {
         $pdf_install = new \WeDevs\ERP\Accounting\PDF_Install();
 
         if ( $action === 'install' ) {
-            $pdf_install->ac_get_plugins( array(
-                array(
-                    'name'    => 'erp-pdf-invoice',
-                    'path'    => 'https://downloads.wordpress.org/plugin/erp-pdf-invoice.1.0.0.zip',
-                    'install' => $plugin
-                )
-            ) );
+            $pdf_install->install_plugin( 'https://downloads.wordpress.org/plugin/erp-pdf-invoice.1.0.0.zip' );
         } elseif ( $action === 'active' ) {
-            $pdf_install->ac_plugin_activate( $plugin );            
+            $pdf_install->activate_pdf_plugin( $plugin );            
         }
 
         if ( \file_exists( WP_PLUGIN_DIR . '/' . $plugin ) ) {
