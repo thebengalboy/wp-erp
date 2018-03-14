@@ -73,6 +73,9 @@
             this.payment.initialize();
             $( 'body' ).on( 'click', '.payment-duplicate', this.payment.duplicate );
             $( 'body' ).on( 'click', '.payment-send-email', this.invoice.sendEmail );
+
+            // PDF plugin notice
+            $( 'body' ).on( 'click', '.notice-pdf .notice-dismiss', this.pdfNotice.dismiss );
         },
     //}
 
@@ -495,6 +498,19 @@
             duplicate: function ( e ) {
                 e.preventDefault();
                 alert('duplicate');
+            }
+        },
+
+        pdfNotice: {
+            dismiss: function(e) {
+                console.log(e);
+                
+                $.ajax({
+                    url: ajaxurl,
+                    data: {
+                        action: 'dismiss_pdf_notice'
+                    }
+                })
             }
         },
 
