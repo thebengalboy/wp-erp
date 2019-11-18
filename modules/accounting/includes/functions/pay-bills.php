@@ -115,7 +115,7 @@ function erp_acct_insert_pay_bill( $data ) {
     $data['updated_by'] = $created_by;
 
     $voucher_no = null;
-    $currency   = erp_get_currency();
+    $currency   = erp_get_currency(true);
 
     try {
         $wpdb->query( 'START TRANSACTION' );
@@ -486,7 +486,7 @@ function erp_acct_change_bill_status( $bill_no ) {
 
     $due = erp_acct_get_bill_due( $bill_no );
 
-    if ( 0 === $due ) {
+    if ( 0 == $due ) {
 
         $wpdb->update(
             $wpdb->prefix . 'erp_acct_bills',

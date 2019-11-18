@@ -112,7 +112,7 @@ function erp_acct_insert_pay_purchase( $data ) {
     $data['updated_at'] = date( 'Y-m-d H:i:s' );
     $data['updated_by'] = $created_by;
     $voucher_no         = null;
-    $currency           = erp_get_currency();
+    $currency           = erp_get_currency(true);
 
     try {
         $wpdb->query( 'START TRANSACTION' );
@@ -487,7 +487,7 @@ function erp_acct_change_purchase_status( $purchase_no ) {
 
     $due = erp_acct_get_purchase_due( $purchase_no );
 
-    if ( 0 === $due ) {
+    if ( 0 == $due ) {
         $wpdb->update(
             $wpdb->prefix . 'erp_acct_purchase',
             array(
