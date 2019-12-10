@@ -2162,6 +2162,7 @@ if (false) {(function () {
 //
 //
 //
+//
 
 /* eslint func-names: ["error", "never"] */
 
@@ -2184,6 +2185,10 @@ if (false) {(function () {
       }
     },
     multiple: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
       type: Boolean,
       default: false
     },
@@ -10800,11 +10805,11 @@ if (false) {(function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_NewTaxAgency_vue__ = __webpack_require__(180);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_872040ec_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxAgency_vue__ = __webpack_require__(440);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_872040ec_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxAgency_vue__ = __webpack_require__(649);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(439)
+  __webpack_require__(648)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -10817,12 +10822,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-872040ec"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_NewTaxAgency_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_872040ec_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxAgency_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_872040ec_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxAgency_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -10856,8 +10861,12 @@ if (false) {(function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_NewTaxCategory_vue__ = __webpack_require__(181);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0e7d34c3_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxCategory_vue__ = __webpack_require__(441);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0e7d34c3_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxCategory_vue__ = __webpack_require__(656);
 var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(655)
+}
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -10867,14 +10876,14 @@ var normalizeComponent = __webpack_require__(0)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-0e7d34c3"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_NewTaxCategory_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0e7d34c3_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxCategory_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0e7d34c3_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxCategory_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -10908,8 +10917,12 @@ if (false) {(function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_NewTaxZone_vue__ = __webpack_require__(183);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1937b2f1_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxZone_vue__ = __webpack_require__(444);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1937b2f1_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxZone_vue__ = __webpack_require__(659);
 var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(658)
+}
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -10919,14 +10932,14 @@ var normalizeComponent = __webpack_require__(0)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-1937b2f1"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_NewTaxZone_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1937b2f1_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxZone_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1937b2f1_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NewTaxZone_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -12266,6 +12279,7 @@ var render = function() {
         "close-on-select": !_vm.multiple,
         loading: _vm.isLoading,
         placeholder: _vm.placeholder,
+        disabled: _vm.disabled,
         label: "name",
         "track-by": "id"
       },
@@ -14973,6 +14987,7 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFs
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -15005,7 +15020,8 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFs
       categories: [],
       tax_cats: [],
       productType: [],
-      title: 'Product'
+      title: __('Product', 'erp'),
+      isDisabled: false
     };
   },
   created: function created() {
@@ -15031,6 +15047,7 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFs
       };
       this.ProductFields.salePrice = product.sale_price;
       this.ProductFields.costPrice = product.cost_price;
+      this.isDisabled = true;
     }
 
     this.loaded();
@@ -21516,7 +21533,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
   watch: {
     'basic_fields.vendor': function basic_fieldsVendor() {
       if (!this.editMode) {
-        this.getvendorAddress();
+        this.getvendorData();
       }
     }
   },
@@ -21602,7 +21619,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
                 this.setDataForEdit(request2.data); // initialize combo button id with `update`
 
                 this.$store.dispatch('combo/setBtnID', 'update');
-                _context.next = 23;
+                _context.next = 22;
                 break;
 
               case 18:
@@ -21611,14 +21628,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
                      * create a new purchase
                      * -----------------------------------------------
                      */
-                this.getProducts();
                 this.basic_fields.trn_date = erp_acct_var.current_date;
                 this.basic_fields.due_date = erp_acct_var.current_date;
                 this.transactionLines.push({}, {}, {}); // initialize combo button id with `save`
 
                 this.$store.dispatch('combo/setBtnID', 'save');
 
-              case 23:
+              case 22:
               case "end":
                 return _context.stop();
             }
@@ -21670,7 +21686,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
       this.products = [];
       this.$store.dispatch('spinner/setSpinner', true);
-      __WEBPACK_IMPORTED_MODULE_4_admin_http__["a" /* default */].get('/products', {
+      __WEBPACK_IMPORTED_MODULE_4_admin_http__["a" /* default */].get("vendors/".concat(this.basic_fields.vendor.id, "/products"), {
         params: {
           number: -1
         }
@@ -21690,7 +21706,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
         throw error;
       });
     },
-    getvendorAddress: function getvendorAddress() {
+    getvendorData: function getvendorData() {
       var _this3 = this;
 
       var vendor_id = this.basic_fields.vendor.id;
@@ -21705,6 +21721,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
         var address = "Street: ".concat(billing.street_1, " ").concat(billing.street_2, " \nCity: ").concat(billing.city, " \nState: ").concat(billing.state, " \nCountry: ").concat(billing.country);
         _this3.basic_fields.billing_address = address;
       });
+      this.getProducts();
     },
     orderToPurchase: function orderToPurchase() {
       var purchase_order = 1;
@@ -25677,7 +25694,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
               key: '#',
               label: __('No actions found', 'erp')
             }];
-          } else if (item.type === 'invoice') {
+          } else if (item.type === 'invoice' && item.status_code !== '4') {
             if (item.status_code === '7') {
               delete item['actions'];
             } else if (item.status_code === '2' || item.status_code === '3' || item.status_code === '5') {
@@ -27287,7 +27304,7 @@ setTimeout(function () {
               key: '#',
               label: __('No actions found', 'erp')
             }];
-          } else if (item.type === 'purchase') {
+          } else if (item.type === 'purchase' && item.status_code !== '4') {
             if (item.status_code === '7') {
               delete item['actions'];
             } else if (item.status_code === '2' || item.status_code === '3' || item.status_code === '5') {
@@ -34640,6 +34657,7 @@ var render = function() {
                                     _c("multi-select", {
                                       attrs: {
                                         options: _vm.productType,
+                                        disabled: _vm.isDisabled,
                                         multiple: false
                                       },
                                       model: {
@@ -46846,7 +46864,10 @@ var render = function() {
           _c("p", [
             _vm._v(
               _vm._s(
-                _vm.__("Detailed transactions list of ledger accounts.", "erp")
+                _vm.__(
+                  "The ledger report contains the classified and detailed information of all the individual accounts including the debit and credit aspects.",
+                  "erp"
+                )
               )
             )
           ]),
@@ -51230,7 +51251,7 @@ var render = function() {
                               _c("td", [_vm._v(_vm._s(line.qty))]),
                               _vm._v(" "),
                               _c("td", [
-                                _vm._v(_vm._s(_vm.moneyFormat(line.cost_price)))
+                                _vm._v(_vm._s(_vm.moneyFormat(line.price)))
                               ]),
                               _vm._v(" "),
                               _c("td", [
@@ -52993,9 +53014,9 @@ var render = function() {
                           staticClass: "wperp-form-field text-right",
                           attrs: { type: "text", readonly: "" },
                           domProps: {
-                            value: isNaN(_vm.totalDebit)
+                            value: isNaN(_vm.totalDebit())
                               ? _vm.debit_total
-                              : _vm.moneyFormat(_vm.totalDebit)
+                              : _vm.moneyFormat(_vm.totalDebit())
                           }
                         })
                       ]),
@@ -53005,9 +53026,9 @@ var render = function() {
                           staticClass: "wperp-form-field text-right",
                           attrs: { type: "text", readonly: "" },
                           domProps: {
-                            value: isNaN(_vm.totalCredit)
+                            value: isNaN(_vm.totalCredit())
                               ? _vm.credit_total
-                              : _vm.moneyFormat(_vm.totalCredit)
+                              : _vm.moneyFormat(_vm.totalCredit())
                           }
                         })
                       ]),
@@ -58230,308 +58251,9 @@ if (false) {
 }
 
 /***/ }),
-/* 439 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 440 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass: "wperp-modal has-form wperp-modal-open",
-      attrs: { id: "wperp-tax-agency-modal", role: "dialog" }
-    },
-    [
-      _c("div", { staticClass: "wperp-modal-dialog" }, [
-        _c(
-          "div",
-          { staticClass: "wperp-modal-content" },
-          [
-            _c("div", { staticClass: "wperp-modal-header" }, [
-              _c("h3", [
-                _vm._v(
-                  _vm._s(_vm.is_update ? "Edit" : "Add") +
-                    " " +
-                    _vm._s(_vm.__("Tax Agency", "erp"))
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "span",
-                {
-                  staticClass: "modal-close",
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.closeModal($event)
-                    }
-                  }
-                },
-                [_c("i", { staticClass: "flaticon-close" })]
-              )
-            ]),
-            _vm._v(" "),
-            _c("show-errors", { attrs: { error_msgs: _vm.form_errors } }),
-            _vm._v(" "),
-            _c(
-              "form",
-              {
-                staticClass: "modal-form edit-customer-modal",
-                attrs: { action: "", method: "post" },
-                on: {
-                  submit: function($event) {
-                    $event.preventDefault()
-                    return _vm.taxAgencyFormSubmit($event)
-                  }
-                }
-              },
-              [
-                _c("div", { staticClass: "wperp-modal-body" }, [
-                  _c("div", { staticClass: "wperp-form-group" }, [
-                    _c("label", [
-                      _vm._v(_vm._s(_vm.__("Tax Agency Name", "erp"))),
-                      _c("span", { staticClass: "wperp-required-sign" }, [
-                        _vm._v("*")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.agency,
-                          expression: "agency"
-                        }
-                      ],
-                      staticClass: "wperp-form-field",
-                      attrs: { type: "text" },
-                      domProps: { value: _vm.agency },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.agency = $event.target.value
-                        }
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "wperp-modal-footer pt-0" }, [
-                  _c(
-                    "div",
-                    { staticClass: "buttons-wrapper text-right" },
-                    [
-                      _vm.is_update
-                        ? _c("submit-button", {
-                            attrs: {
-                              text: _vm.__("Update", "erp"),
-                              working: _vm.isWorking
-                            }
-                          })
-                        : _c("submit-button", {
-                            attrs: {
-                              text: _vm.__("Save", "erp"),
-                              working: _vm.isWorking
-                            }
-                          })
-                    ],
-                    1
-                  )
-                ])
-              ]
-            )
-          ],
-          1
-        )
-      ])
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-872040ec", esExports)
-  }
-}
-
-/***/ }),
-/* 441 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass: "wperp-modal has-form wperp-modal-open",
-      attrs: { id: "wperp-tax-category-modal", role: "dialog" }
-    },
-    [
-      _c("div", { staticClass: "wperp-modal-dialog" }, [
-        _c(
-          "div",
-          { staticClass: "wperp-modal-content" },
-          [
-            _c("div", { staticClass: "wperp-modal-header" }, [
-              _c("h3", [
-                _vm._v(
-                  _vm._s(_vm.is_update ? "Edit" : "Add") +
-                    " " +
-                    _vm._s(_vm.__("Tax Category", "erp"))
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "span",
-                {
-                  staticClass: "modal-close",
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.closeModal($event)
-                    }
-                  }
-                },
-                [_c("i", { staticClass: "flaticon-close" })]
-              )
-            ]),
-            _vm._v(" "),
-            _c("show-errors", { attrs: { error_msgs: _vm.form_errors } }),
-            _vm._v(" "),
-            _c(
-              "form",
-              {
-                staticClass: "modal-form edit-customer-modal",
-                attrs: { action: "", method: "post" },
-                on: {
-                  submit: function($event) {
-                    $event.preventDefault()
-                    return _vm.taxCatFormSubmit($event)
-                  }
-                }
-              },
-              [
-                _c("div", { staticClass: "wperp-modal-body" }, [
-                  _c("div", { staticClass: "wperp-form-group" }, [
-                    _c("label", [
-                      _vm._v(_vm._s(_vm.__("Tax Category Name", "erp")) + " "),
-                      _c("span", { staticClass: "wperp-required-sign" }, [
-                        _vm._v("*")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.category,
-                          expression: "category"
-                        }
-                      ],
-                      staticClass: "wperp-form-field wperp-required-sign",
-                      attrs: { type: "text", required: "" },
-                      domProps: { value: _vm.category },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.category = $event.target.value
-                        }
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "wperp-form-group mb-0" }, [
-                    _c("label", [_vm._v(_vm._s(_vm.__("Description", "erp")))]),
-                    _vm._v(" "),
-                    _c("textarea", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.desc,
-                          expression: "desc"
-                        }
-                      ],
-                      staticClass: "wperp-form-field",
-                      attrs: { rows: "4" },
-                      domProps: { value: _vm.desc },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.desc = $event.target.value
-                        }
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "wperp-modal-footer pt-0" }, [
-                  _c(
-                    "div",
-                    { staticClass: "buttons-wrapper text-right" },
-                    [
-                      _vm.is_update
-                        ? _c("submit-button", {
-                            attrs: {
-                              text: _vm.__("Update", "erp"),
-                              working: _vm.isWorking
-                            }
-                          })
-                        : _c("submit-button", {
-                            attrs: {
-                              text: _vm.__("Save", "erp"),
-                              working: _vm.isWorking
-                            }
-                          })
-                    ],
-                    1
-                  )
-                ])
-              ]
-            )
-          ],
-          1
-        )
-      ])
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0e7d34c3", esExports)
-  }
-}
-
-/***/ }),
+/* 439 */,
+/* 440 */,
+/* 441 */,
 /* 442 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -58594,221 +58316,7 @@ if (false) {(function () {
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 444 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass: "wperp-modal has-form wperp-modal-open",
-      attrs: { id: "wperp-tax-agency-modal", role: "dialog" }
-    },
-    [
-      _c("div", { staticClass: "wperp-modal-dialog" }, [
-        _c(
-          "div",
-          { staticClass: "wperp-modal-content" },
-          [
-            _c("div", { staticClass: "wperp-modal-header" }, [
-              _c("h3", [
-                _vm._v(
-                  _vm._s(_vm.is_update ? "Edit" : "Add") +
-                    " " +
-                    _vm._s(_vm.__("Tax Zone", "erp"))
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "span",
-                {
-                  staticClass: "modal-close",
-                  on: {
-                    click: function($event) {
-                      $event.preventDefault()
-                      return _vm.closeModal($event)
-                    }
-                  }
-                },
-                [_c("i", { staticClass: "flaticon-close" })]
-              )
-            ]),
-            _vm._v(" "),
-            _c("show-errors", { attrs: { error_msgs: _vm.form_errors } }),
-            _vm._v(" "),
-            _c(
-              "form",
-              {
-                staticClass: "modal-form edit-customer-modal",
-                attrs: { method: "post" },
-                on: {
-                  submit: function($event) {
-                    $event.preventDefault()
-                    return _vm.taxZoneFormSubmit($event)
-                  }
-                }
-              },
-              [
-                _c("div", { staticClass: "wperp-modal-body" }, [
-                  _c("div", { staticClass: "wperp-form-group" }, [
-                    _c("label", [
-                      _vm._v(_vm._s(_vm.__("Tax Zone Name", "erp")) + " "),
-                      _c("span", { staticClass: "wperp-required-sign" }, [
-                        _vm._v("*")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.rate_name,
-                          expression: "rate_name"
-                        }
-                      ],
-                      staticClass: "wperp-form-field",
-                      attrs: { type: "text", required: "" },
-                      domProps: { value: _vm.rate_name },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.rate_name = $event.target.value
-                        }
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "wperp-form-group" }, [
-                    _c("label", [_vm._v(_vm._s(_vm.__("Tax Number", "erp")))]),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.tax_number,
-                          expression: "tax_number"
-                        }
-                      ],
-                      staticClass: "wperp-form-field",
-                      attrs: {
-                        type: "text",
-                        placeholder: _vm.__("Enter Tax Number", "erp")
-                      },
-                      domProps: { value: _vm.tax_number },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.tax_number = $event.target.value
-                        }
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-check" }, [
-                    _c("label", { staticClass: "form-check-label" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.is_default,
-                            expression: "is_default"
-                          }
-                        ],
-                        staticClass: "form-check-input",
-                        attrs: { type: "checkbox" },
-                        domProps: {
-                          checked: Array.isArray(_vm.is_default)
-                            ? _vm._i(_vm.is_default, null) > -1
-                            : _vm.is_default
-                        },
-                        on: {
-                          change: function($event) {
-                            var $$a = _vm.is_default,
-                              $$el = $event.target,
-                              $$c = $$el.checked ? true : false
-                            if (Array.isArray($$a)) {
-                              var $$v = null,
-                                $$i = _vm._i($$a, $$v)
-                              if ($$el.checked) {
-                                $$i < 0 && (_vm.is_default = $$a.concat([$$v]))
-                              } else {
-                                $$i > -1 &&
-                                  (_vm.is_default = $$a
-                                    .slice(0, $$i)
-                                    .concat($$a.slice($$i + 1)))
-                              }
-                            } else {
-                              _vm.is_default = $$c
-                            }
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "form-check-sign" }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "field-label" }, [
-                        _vm._v(
-                          _vm._s(_vm.__("Is this tax default", "erp")) + "?"
-                        )
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "wperp-modal-footer pt-0" }, [
-                  _c(
-                    "div",
-                    { staticClass: "buttons-wrapper text-right" },
-                    [
-                      _vm.is_update
-                        ? _c("submit-button", {
-                            attrs: {
-                              text: _vm.__("Update", "erp"),
-                              working: _vm.isWorking
-                            }
-                          })
-                        : _c("submit-button", {
-                            attrs: {
-                              text: _vm.__("Save", "erp"),
-                              working: _vm.isWorking
-                            }
-                          })
-                    ],
-                    1
-                  )
-                ])
-              ]
-            )
-          ],
-          1
-        )
-      ])
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1937b2f1", esExports)
-  }
-}
-
-/***/ }),
+/* 444 */,
 /* 445 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -65826,6 +65334,680 @@ var mutations = {
   actions: actions,
   mutations: mutations
 });
+
+/***/ }),
+/* 509 */,
+/* 510 */,
+/* 511 */,
+/* 512 */,
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */,
+/* 517 */,
+/* 518 */,
+/* 519 */,
+/* 520 */,
+/* 521 */,
+/* 522 */,
+/* 523 */,
+/* 524 */,
+/* 525 */,
+/* 526 */,
+/* 527 */,
+/* 528 */,
+/* 529 */,
+/* 530 */,
+/* 531 */,
+/* 532 */,
+/* 533 */,
+/* 534 */,
+/* 535 */,
+/* 536 */,
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */,
+/* 543 */,
+/* 544 */,
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */,
+/* 553 */,
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */,
+/* 559 */,
+/* 560 */,
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
+/* 565 */,
+/* 566 */,
+/* 567 */,
+/* 568 */,
+/* 569 */,
+/* 570 */,
+/* 571 */,
+/* 572 */,
+/* 573 */,
+/* 574 */,
+/* 575 */,
+/* 576 */,
+/* 577 */,
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */,
+/* 586 */,
+/* 587 */,
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
+/* 603 */,
+/* 604 */,
+/* 605 */,
+/* 606 */,
+/* 607 */,
+/* 608 */,
+/* 609 */,
+/* 610 */,
+/* 611 */,
+/* 612 */,
+/* 613 */,
+/* 614 */,
+/* 615 */,
+/* 616 */,
+/* 617 */,
+/* 618 */,
+/* 619 */,
+/* 620 */,
+/* 621 */,
+/* 622 */,
+/* 623 */,
+/* 624 */,
+/* 625 */,
+/* 626 */,
+/* 627 */,
+/* 628 */,
+/* 629 */,
+/* 630 */,
+/* 631 */,
+/* 632 */,
+/* 633 */,
+/* 634 */,
+/* 635 */,
+/* 636 */,
+/* 637 */,
+/* 638 */,
+/* 639 */,
+/* 640 */,
+/* 641 */,
+/* 642 */,
+/* 643 */,
+/* 644 */,
+/* 645 */,
+/* 646 */,
+/* 647 */,
+/* 648 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 649 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "wperp-modal has-form wperp-modal-open",
+      attrs: { id: "wperp-tax-agency-modal", role: "dialog" }
+    },
+    [
+      _c("div", { staticClass: "wperp-modal-dialog" }, [
+        _c(
+          "div",
+          { staticClass: "wperp-modal-content" },
+          [
+            _c("div", { staticClass: "wperp-modal-header" }, [
+              _c("h3", [
+                _vm._v(
+                  _vm._s(_vm.is_update ? "Edit" : "Add") +
+                    " " +
+                    _vm._s(_vm.__("Tax Agency", "erp"))
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "span",
+                {
+                  staticClass: "modal-close",
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      return _vm.closeModal($event)
+                    }
+                  }
+                },
+                [_c("i", { staticClass: "flaticon-close" })]
+              )
+            ]),
+            _vm._v(" "),
+            _c("show-errors", { attrs: { error_msgs: _vm.form_errors } }),
+            _vm._v(" "),
+            _c(
+              "form",
+              {
+                staticClass: "modal-form edit-customer-modal",
+                attrs: { action: "", method: "post" },
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.taxAgencyFormSubmit($event)
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "wperp-modal-body" }, [
+                  _c("div", { staticClass: "wperp-form-group" }, [
+                    _c("label", [
+                      _vm._v(_vm._s(_vm.__("Tax Agency Name", "erp"))),
+                      _c("span", { staticClass: "wperp-required-sign" }, [
+                        _vm._v("*")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.agency,
+                          expression: "agency"
+                        }
+                      ],
+                      staticClass: "wperp-form-field",
+                      attrs: { type: "text" },
+                      domProps: { value: _vm.agency },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.agency = $event.target.value
+                        }
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "wperp-modal-footer pt-0" }, [
+                  _c(
+                    "div",
+                    { staticClass: "buttons-wrapper text-right" },
+                    [
+                      _vm.is_update
+                        ? _c("submit-button", {
+                            attrs: {
+                              text: _vm.__("Update", "erp"),
+                              working: _vm.isWorking
+                            }
+                          })
+                        : _c("submit-button", {
+                            attrs: {
+                              text: _vm.__("Save", "erp"),
+                              working: _vm.isWorking
+                            }
+                          })
+                    ],
+                    1
+                  )
+                ])
+              ]
+            )
+          ],
+          1
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-872040ec", esExports)
+  }
+}
+
+/***/ }),
+/* 650 */,
+/* 651 */,
+/* 652 */,
+/* 653 */,
+/* 654 */,
+/* 655 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 656 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "wperp-modal has-form wperp-modal-open",
+      attrs: { id: "wperp-tax-category-modal", role: "dialog" }
+    },
+    [
+      _c("div", { staticClass: "wperp-modal-dialog" }, [
+        _c(
+          "div",
+          { staticClass: "wperp-modal-content" },
+          [
+            _c("div", { staticClass: "wperp-modal-header" }, [
+              _c("h3", [
+                _vm._v(
+                  _vm._s(_vm.is_update ? "Edit" : "Add") +
+                    " " +
+                    _vm._s(_vm.__("Tax Category", "erp"))
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "span",
+                {
+                  staticClass: "modal-close",
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      return _vm.closeModal($event)
+                    }
+                  }
+                },
+                [_c("i", { staticClass: "flaticon-close" })]
+              )
+            ]),
+            _vm._v(" "),
+            _c("show-errors", { attrs: { error_msgs: _vm.form_errors } }),
+            _vm._v(" "),
+            _c(
+              "form",
+              {
+                staticClass: "modal-form edit-customer-modal",
+                attrs: { action: "", method: "post" },
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.taxCatFormSubmit($event)
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "wperp-modal-body" }, [
+                  _c("div", { staticClass: "wperp-form-group" }, [
+                    _c("label", [
+                      _vm._v(_vm._s(_vm.__("Tax Category Name", "erp")) + " "),
+                      _c("span", { staticClass: "wperp-required-sign" }, [
+                        _vm._v("*")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.category,
+                          expression: "category"
+                        }
+                      ],
+                      staticClass: "wperp-form-field wperp-required-sign",
+                      attrs: { type: "text", required: "" },
+                      domProps: { value: _vm.category },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.category = $event.target.value
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "wperp-form-group mb-0" }, [
+                    _c("label", [_vm._v(_vm._s(_vm.__("Description", "erp")))]),
+                    _vm._v(" "),
+                    _c("textarea", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.desc,
+                          expression: "desc"
+                        }
+                      ],
+                      staticClass: "wperp-form-field",
+                      attrs: { rows: "4" },
+                      domProps: { value: _vm.desc },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.desc = $event.target.value
+                        }
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "wperp-modal-footer pt-0" }, [
+                  _c(
+                    "div",
+                    { staticClass: "buttons-wrapper text-right" },
+                    [
+                      _vm.is_update
+                        ? _c("submit-button", {
+                            attrs: {
+                              text: _vm.__("Update", "erp"),
+                              working: _vm.isWorking
+                            }
+                          })
+                        : _c("submit-button", {
+                            attrs: {
+                              text: _vm.__("Save", "erp"),
+                              working: _vm.isWorking
+                            }
+                          })
+                    ],
+                    1
+                  )
+                ])
+              ]
+            )
+          ],
+          1
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0e7d34c3", esExports)
+  }
+}
+
+/***/ }),
+/* 657 */,
+/* 658 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 659 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "wperp-modal has-form wperp-modal-open",
+      attrs: { id: "wperp-tax-agency-modal", role: "dialog" }
+    },
+    [
+      _c("div", { staticClass: "wperp-modal-dialog" }, [
+        _c(
+          "div",
+          { staticClass: "wperp-modal-content" },
+          [
+            _c("div", { staticClass: "wperp-modal-header" }, [
+              _c("h3", [
+                _vm._v(
+                  _vm._s(_vm.is_update ? "Edit" : "Add") +
+                    " " +
+                    _vm._s(_vm.__("Tax Zone", "erp"))
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "span",
+                {
+                  staticClass: "modal-close",
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      return _vm.closeModal($event)
+                    }
+                  }
+                },
+                [_c("i", { staticClass: "flaticon-close" })]
+              )
+            ]),
+            _vm._v(" "),
+            _c("show-errors", { attrs: { error_msgs: _vm.form_errors } }),
+            _vm._v(" "),
+            _c(
+              "form",
+              {
+                staticClass: "modal-form edit-customer-modal",
+                attrs: { method: "post" },
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.taxZoneFormSubmit($event)
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "wperp-modal-body" }, [
+                  _c("div", { staticClass: "wperp-form-group" }, [
+                    _c("label", [
+                      _vm._v(_vm._s(_vm.__("Tax Zone Name", "erp")) + " "),
+                      _c("span", { staticClass: "wperp-required-sign" }, [
+                        _vm._v("*")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.rate_name,
+                          expression: "rate_name"
+                        }
+                      ],
+                      staticClass: "wperp-form-field",
+                      attrs: { type: "text", required: "" },
+                      domProps: { value: _vm.rate_name },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.rate_name = $event.target.value
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "wperp-form-group" }, [
+                    _c("label", [_vm._v(_vm._s(_vm.__("Tax Number", "erp")))]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.tax_number,
+                          expression: "tax_number"
+                        }
+                      ],
+                      staticClass: "wperp-form-field",
+                      attrs: {
+                        type: "text",
+                        placeholder: _vm.__("Enter Tax Number", "erp")
+                      },
+                      domProps: { value: _vm.tax_number },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.tax_number = $event.target.value
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-check" }, [
+                    _c("label", { staticClass: "form-check-label" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.is_default,
+                            expression: "is_default"
+                          }
+                        ],
+                        staticClass: "form-check-input",
+                        attrs: { type: "checkbox" },
+                        domProps: {
+                          checked: Array.isArray(_vm.is_default)
+                            ? _vm._i(_vm.is_default, null) > -1
+                            : _vm.is_default
+                        },
+                        on: {
+                          change: function($event) {
+                            var $$a = _vm.is_default,
+                              $$el = $event.target,
+                              $$c = $$el.checked ? true : false
+                            if (Array.isArray($$a)) {
+                              var $$v = null,
+                                $$i = _vm._i($$a, $$v)
+                              if ($$el.checked) {
+                                $$i < 0 && (_vm.is_default = $$a.concat([$$v]))
+                              } else {
+                                $$i > -1 &&
+                                  (_vm.is_default = $$a
+                                    .slice(0, $$i)
+                                    .concat($$a.slice($$i + 1)))
+                              }
+                            } else {
+                              _vm.is_default = $$c
+                            }
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "form-check-sign" }),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "field-label" }, [
+                        _vm._v(
+                          _vm._s(_vm.__("Is this tax default", "erp")) + "?"
+                        )
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "wperp-modal-footer pt-0" }, [
+                  _c(
+                    "div",
+                    { staticClass: "buttons-wrapper text-right" },
+                    [
+                      _vm.is_update
+                        ? _c("submit-button", {
+                            attrs: {
+                              text: _vm.__("Update", "erp"),
+                              working: _vm.isWorking
+                            }
+                          })
+                        : _c("submit-button", {
+                            attrs: {
+                              text: _vm.__("Save", "erp"),
+                              working: _vm.isWorking
+                            }
+                          })
+                    ],
+                    1
+                  )
+                ])
+              ]
+            )
+          ],
+          1
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1937b2f1", esExports)
+  }
+}
 
 /***/ })
 ],[213]);
